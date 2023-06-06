@@ -25,7 +25,7 @@ else $username = "";
                     $logged = $username . "(" . $userid . ")님";
                     ?>
                     <li class="nav-item"><a class="nav-link" href="board.php">Board</a></li>
-                    <li class="nav-item"><a class="nav-link" href="message.php">Message</a></li>
+                    <li class="nav-item"><a class="nav-link" href="message_form.php">Message</a></li>
                     <li class="nav-item"><a class="nav-link" href="signout.php">SignOut</a></li>
                     <li class="nav-item"><a class="nav-link" href="member_modify_form.php">Info</a></li>
                     <?php

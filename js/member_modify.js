@@ -21,17 +21,10 @@
           return;
       }
 
-      if (!document.member_form.email1.value)
+      if (!document.member_form.email.value)
       {
           alert("이메일 주소를 입력하세요!");    
-          document.member_form.email1.focus();
-          return;
-      }
-
-      if (!document.member_form.email2.value)
-      {
-          alert("이메일 주소를 입력하세요!");    
-          document.member_form.email2.focus();
+          document.member_form.email.focus();
           return;
       }
 
@@ -53,8 +46,7 @@
       document.member_form.pass.value = "";
       document.member_form.pass_confirm.value = "";
       document.member_form.name.value = "";
-      document.member_form.email1.value = "";
-      document.member_form.email2.value = "";
+      document.member_form.email.value = "";
 	  
       document.member_form.id.focus();
 

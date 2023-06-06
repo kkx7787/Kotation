@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
-<link rel="stylesheet" type="text/css" href="./css/message.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Kotation</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/message.css">
 </head>
-<body> 
-<header>
-    <?php include "header.php";?>
-</header>  
+<body id="page-top">
+<header class="masthead">
+    <?php include "header.php"; ?>
+</header>
 <section>
-	<div id="main_img_bar">
-        <img src="./img/main_img.png">
-    </div>
    	<div id="message_box">
 	    <h3 class="title">
 <?php
@@ -42,10 +51,10 @@
 	$record = mysqli_fetch_array($result2);
 	$msg_name = $record["name"];
 
-	if ($mode=="send")	    	
-	    echo "송신 쪽지함 > 내용보기";
-	else
-		echo "수신 쪽지함 > 내용보기";
+if ($mode == "send")
+    echo "Send Message Box";
+else
+    echo "Receive Message Box";
 ?>
 		</h3>
 	    <ul id="view_content">
@@ -55,16 +64,16 @@
 			</li>
 			<li>
 				<?=$content?>
-			</li>		
+			</li>
 	    </ul>
 	    <ul class="buttons">
-				<li><button onclick="location.href='message_box.php?mode=rv'">수신 쪽지함</button></li>
-				<li><button onclick="location.href='message_box.php?mode=send'">송신 쪽지함</button></li>
-				<li><button onclick="location.href='message_response_form.php?num=<?=$num?>'">답변 쪽지</button></li>
-				<li><button onclick="location.href='message_delete.php?num=<?=$num?>&mode=<?=$mode?>'">삭제</button></li>
+            <li class="col-md-2 text-center text-lg"><button onclick="location.href='message_box.php?mode=rv'">Receive Message Box</button></li>
+            <li class="col-md-2 text-center text-lg"><button onclick="location.href='message_box.php?mode=send'">Send Message Box</button></li>
+            <li class="col-md-2 text-center text-lg"><button onclick="location.href='message_response_form.php?num=<?=$num?>'">Reply Message</button></li>
+            <li class="col-md-2 text-center text-lg"><button onclick="location.href='message_delete.php?num=<?=$num?>&mode=<?=$mode?>'">Delete</button></li>
 		</ul>
 	</div> <!-- message_box -->
-</section> 
+</section>
 <footer>
     <?php include "footer.php";?>
 </footer>

@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
-    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/member_modify.js"></script>
 </head>
 <body id="page-top">
 <header class="masthead">
@@ -43,25 +43,19 @@ mysqli_close($con);
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form id">
-                        <!-- ID input-->
-                        <div class="col1">Your ID : </div>
-                        <div calss="col2"><?= $userid ?></div>
-                        <input class="form-control" id="id" type="text" placeholder="Your ID *"
-                               data-sb-validations="required" name="id"/>
-                        <div class="invalid-feedback" data-sb-feedback="id:required">ID is required.</div>
+                        <div class="col1 my-2">Your ID : <?= $userid ?></div>
                     </div>
                     <div class="clear"></div>
                     <div class="form">
-                        <!-- Password number input-->
                         <input class="form-control" id="pass" type="password" placeholder="Your Password *"
-                               data-sb-validations="required" name="pass"/>
+                               data-sb-validations="required" name="pass" value="<?= $pass ?>"/>
                         <div class="invalid-feedback" data-sb-feedback="pass:required">Password is required.</div>
                     </div>
                     <div class="clear"></div>
                     <div class="form-group mb-md-0">
                         <!-- Password number input-->
                         <input class="form-control" id="pass_confirm" type="password" placeholder="Your Password_Confirm *"
-                               data-sb-validations="required" name="pass_confirm"/>
+                               data-sb-validations="required" name="pass_confirm" value="<?= $pass ?>"/>
                         <div class="invalid-feedback" data-sb-feedback="pass_confirm:required">Password_Confirm is required.</div>
                     </div>
                     <div class="clear"></div>
@@ -70,14 +64,14 @@ mysqli_close($con);
                     <div class="form-group">
                         <!-- Name input-->
                         <input class="form-control" id="name" type="text" placeholder="Your Name *"
-                               data-sb-validations="required" name="name"/>
+                               data-sb-validations="required" name="name" value="<?= $name ?>"/>
                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                     </div>
                     <div class="clear"></div>
                     <div class="form-group">
                         <!-- Email address input-->
                         <input class="form-control" id="email" type="email" placeholder="Your Email *"
-                               data-sb-validations="required,email" name="email"/>
+                               data-sb-validations="required,email" name="email" value="<?= $email ?>"/>
                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                     </div>

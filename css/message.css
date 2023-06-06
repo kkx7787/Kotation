@@ -17,7 +17,7 @@
 #message span {	display: inline-block; text-align: center; }
 #message .title { font-weight: bold; }
 #message .col1 { width: 80px; }
-#message .col2 { width: 410px; text-align: left; }
+#message .col2 { width: 350px; text-align: left; }
 #message .col3 { width: 120px; }
 #message .col4 { width: 150px; }
 #page_num {	text-align: center;	margin: 30px 0 }

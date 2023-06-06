@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
-<link rel="stylesheet" type="text/css" href="./css/message.css">
-<script>
-  function check_input() {
-  	  if (!document.message_form.rv_id.value)
-      {
-          alert("수신 아이디를 입력하세요!");
-          document.message_form.rv_id.focus();
-          return;
-      }
-      if (!document.message_form.subject.value)
-      {
-          alert("제목을 입력하세요!");
-          document.message_form.subject.focus();
-          return;
-      }
-      if (!document.message_form.content.value)
-      {
-          alert("내용을 입력하세요!");    
-          document.message_form.content.focus();
-          return;
-      }
-      document.message_form.submit();
-   }
-</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Kotation</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+        function check_input() {
+            if (!document.message_form.rv_id.value) {
+                alert("수신 아이디를 입력하세요!");
+                document.message_form.rv_id.focus();
+                return;
+            }
+            if (!document.message_form.subject.value) {
+                alert("제목을 입력하세요!");
+                document.message_form.subject.focus();
+                return;
+            }
+            if (!document.message_form.content.value) {
+                alert("내용을 입력하세요!");
+                document.message_form.content.focus();
+                return;
+            }
+            document.message_form.submit();
+        }
+    </script>
 </head>
-<body> 
-<header>
-    <?php include "header.php";?>
-</header>  
+<body id="page-top">
+<header class="masthead">
+    <?php include "header.php"; ?>
+</header>
 <?php
-	if (!$userid )
-	{
-		echo("<script>
+if (!$userid) {
+    echo("<script>
 				alert('로그인 후 이용해주세요!');
 				history.go(-1);
 				</script>
 			");
-		exit;
-	}
+    exit;
+}
 ?>
-<section>
-	<div id="main_img_bar">
-        <img src="./img/main_img.png">
+<section class="page-section" id="message_form">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Send Message</h2>
+        </div>
+        <form name="message_form" method="post" action="message_insert.php?send_id=<?= $userid ?>">
+            <div class="row justify-content-center my-5">
+                <div id="write_msg" class="col-md-6">
+                    <div class="form id">
+                        <div class="col1 my-2">Sender : <?= $userid ?></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="rv_id" type="text" placeholder="Receiver ID"
+                               data-sb-validations="required" name="rv_id"/>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Receiver ID is required.</div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="subject" type="text" placeholder="Title"
+                               data-sb-validations="required" name="subject"/>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Title is required.</div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="content" placeholder="What do you want to send?"
+                                  data-sb-validations="required" name="content"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Content is required.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center gap-3">
+                <div class="col-md-2 text-center text-lg"><a href="message_box.php?mode=rv">Receive Message Box</a></div>
+                <div class="col-md-2 text-center text-lg"><a href="message_box.php?mode=send">Send Message Box</a></div>
+            </div>
+            <br/>
+            <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit"
+                        onclick="check_input()">
+                    Send
+                </button>
+            </div>
+        </form>
     </div>
-   	<div id="message_box">
-	    <h3 id="write_title">
-	    		쪽지 보내기
-		</h3>
-		<ul class="top_buttons">
-				<li><span><a href="message_box.php?mode=rv">수신 쪽지함 </a></span></li>
-				<li><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
-		</ul>
-	    <form  name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">
-	    	<div id="write_msg">
-	    	    <ul>
-				<li>
-					<span class="col1">보내는 사람 : </span>
-					<span class="col2"><?=$userid?></span>
-				</li>	
-				<li>
-					<span class="col1">수신 아이디 : </span>
-					<span class="col2"><input name="rv_id" type="text"></span>
-				</li>	
-	    		<li>
-	    			<span class="col1">제목 : </span>
-	    			<span class="col2"><input name="subject" type="text"></span>
-	    		</li>	    	
-	    		<li id="text_area">	
-	    			<span class="col1">내용 : </span>
-	    			<span class="col2">
-	    				<textarea name="content"></textarea>
-	    			</span>
-	    		</li>
-	    	    </ul>
-	    	    <button type="button" onclick="check_input()">보내기</button>
-	    	</div>	    	
-	    </form>
-	</div> <!-- message_box -->
-</section> 
+</section>
 <footer>
-    <?php include "footer.php";?>
+    <?php include "footer.php"; ?>
 </footer>
 </body>
 </html>

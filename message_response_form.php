@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
-<link rel="stylesheet" type="text/css" href="./css/message.css">
-<script>
-  function check_input() {
-      if (!document.message_form.subject.value)
-      {
-          alert("제목을 입력하세요!");
-          document.message_form.subject.focus();
-          return;
-      }
-      if (!document.message_form.content.value)
-      {
-          alert("내용을 입력하세요!");    
-          document.message_form.content.focus();
-          return;
-      }
-      document.message_form.submit();
-   }
-</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Kotation</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+        function check_input() {
+            if (!document.message_form.subject.value) {
+                alert("제목을 입력하세요!");
+                document.message_form.subject.focus();
+                return;
+            }
+            if (!document.message_form.content.value) {
+                alert("내용을 입력하세요!");
+                document.message_form.content.focus();
+                return;
+            }
+            document.message_form.submit();
+        }
+    </script>
 </head>
-<body> 
-<header>
-    <?php include "header.php";?>
-</header>  
-<section>
-	<div id="main_img_bar">
-        <img src="./img/main_img.png">
-    </div>
-   	<div id="message_box">
-	    <h3 id="write_title">
-	    		답변 쪽지 보내기
-		</h3>
-<?php
-	$num  = $_GET["num"];
+<body id="page-top">
+<header class="masthead">
+    <?php include "header.php"; ?>
+</header>
+<section class="page-section" id="reply_message">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Reply Message</h2>
+        </div>
+        <?php
+        $num = $_GET["num"];
 
-	$con = mysqli_connect("localhost", "user1", "12345", "sample");
-	$sql = "select * from message where num=$num";
-	$result = mysqli_query($con, $sql);
+        $con = mysqli_connect("localhost", "user1", "12345", "sample");
+        $sql = "select * from message where num=$num";
+        $result = mysqli_query($con, $sql);
 
-	$row = mysqli_fetch_array($result);
-	$send_id      = $row["send_id"];
-	$rv_id      = $row["rv_id"];
-	$subject    = $row["subject"];
-	$content    = $row["content"];
+        $row = mysqli_fetch_array($result);
+        $send_id = $row["send_id"];
+        $rv_id = $row["rv_id"];
+        $subject = $row["subject"];
+        $content = $row["content"];
 
-	$subject = "RE: ".$subject; 
+        $subject = "RE: " . $subject;
 
-	$content = "> ".$content; 
-	$content = str_replace("\n", "\n>", $content);
-	$content = "\n\n\n-----------------------------------------------\n".$content;
+        $content = "> " . $content;
+        $content = str_replace("\n", "\n>", $content);
+        $content = "\n\n\n-----------------------------------------------\n" . $content;
 
-	$result2 = mysqli_query($con, "select name from members where id='$send_id'");
-	$record = mysqli_fetch_array($result2);
-	$send_name    = $record["name"];
-?>		
-	    <form  name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">
-	    	<input type="hidden" name="rv_id" value="<?=$send_id?>">
-	    	<div id="write_msg">
-	    	    <ul>
-				<li>
-					<span class="col1">보내는 사람 : </span>
-					<span class="col2"><?=$userid?></span>
-				</li>	
-				<li>
-					<span class="col1">수신 아이디 : </span>
-					<span class="col2"><?=$send_name?>(<?=$send_id?>)</span>
-				</li>	
-	    		<li>
-	    			<span class="col1">제목 : </span>
-	    			<span class="col2"><input name="subject" type="text" value="<?=$subject?>"></span>
-	    		</li>	    	
-	    		<li id="text_area">	
-	    			<span class="col1">글 내용 : </span>
-	    			<span class="col2">
-	    				<textarea name="content"><?=$content?></textarea>
-	    			</span>
-	    		</li>
-	    	    </ul>
-	    	    <button type="button" onclick="check_input()">보내기</button>
-	    	</div>
-	    </form>
-	</div> <!-- message_box -->
-</section> 
+        $result2 = mysqli_query($con, "select name from members where id='$send_id'");
+        $record = mysqli_fetch_array($result2);
+        $send_name = $record["name"];
+        ?>
+        <form name="message_form" method="post" action="message_insert.php?send_id=<?= $userid ?>">
+            <input type="hidden" name="rv_id" value="<?= $send_id ?>">
+            <div class="row justify-content-center my-5">
+                <div id="write_msg" class="col-md-6">
+                    <div class="form id">
+                        <div class="col1 my-2">Sender : <?= $userid ?></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col1 my-2">Receiver ID : <?= $send_name ?>(<?= $send_id ?>)</div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="subject" type="text" placeholder="Title"
+                               data-sb-validations="required" name="subject" value="<?= $subject ?>"/>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Title is required.</div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="content" placeholder="What do you want to send?"
+                                  data-sb-validations="required" name="content"><?= $content ?></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Content is required.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center gap-3">
+                <div class="col-md-2 text-center text-lg"><a href="message_box.php?mode=rv">Receive Message Box</a></div>
+                <div class="col-md-2 text-center text-lg"><a href="message_box.php?mode=send">Send Message Box</a></div>
+            </div>
+            <br/>
+            <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit"
+                        onclick="check_input()">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div> <!-- message_box -->
+</section>
 <footer>
-    <?php include "footer.php";?>
+    <?php include "footer.php"; ?>
 </footer>
 </body>
 </html>

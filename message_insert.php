@@ -1,7 +1,6 @@
 <meta charset='utf-8'>
 <?php
     $send_id = $_GET["send_id"];
-
     $rv_id = $_POST['rv_id'];
     $subject = $_POST['subject'];
     $content = $_POST['content'];
