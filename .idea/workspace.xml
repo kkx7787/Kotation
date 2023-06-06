@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="acc36add-63fc-49c0-a41d-907cbe887ca4" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_board_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_member_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_member_update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/about/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/about/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/about/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/about/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/close-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/header-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/logos/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/logos/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/logos/ibm.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/logos/microsoft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/map-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/navbar-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/portfolio/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_download.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_modify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_modify_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/board.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/member.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/message.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2018_12_30_20_07_45.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2018_12_31_01_52_52.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2018_12_31_02_20_34.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2018_12_31_02_22_35.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2018_12_31_02_23_20.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2018_12_31_02_34_28.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_11_08_04_25.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_11_21_00_59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_11_21_01_59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_11_21_02_22.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_12_08_40_18.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_17_08_34_24.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_23_07_29_41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2019_01_23_07_31_18.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/board.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/members.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/message.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/DSC00514.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/b_result.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/b_vote.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/btn_login.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/button_reset.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/button_save.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/check_id.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/file.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/main_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사진파일.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/member_modify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member_check_id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member_insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member_modify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member_modify_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message_box.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message_insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message_response_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QelkdT0MONCNR8FOiMDMjplWLj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/kotation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="acc36add-63fc-49c0-a41d-907cbe887ca4" name="변경" comment="" />
+      <created>1685722071594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685722071594</updated>
+      <workItem from="1685722072969" duration="370000" />
+      <workItem from="1685971926758" duration="9897000" />
+      <workItem from="1686043881599" duration="10853000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/header.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
