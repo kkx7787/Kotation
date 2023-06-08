@@ -5,17 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acc36add-63fc-49c0-a41d-907cbe887ca4" name="변경" comment="Implement message function">
+      <change afterPath="$PROJECT_DIR$/css/board_form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/graph.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_option1_choice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_option2_choice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_option3_.choice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_option4_.choice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_option5_choice.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/board_delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_download.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/board_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/board_insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/board_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_modify.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_modify_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/board_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/board_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/board.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/board.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/member_modify_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/member_modify_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_box.php" beforeDir="false" afterPath="$PROJECT_DIR$/message_box.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/message_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_response_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/message_response_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/message_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/signin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +41,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="2QelkdT0MONCNR8FOiMDMjplWLj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,6 +60,21 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Kotation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Kotation" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -61,6 +86,9 @@
       <workItem from="1685722072969" duration="370000" />
       <workItem from="1685971926758" duration="9897000" />
       <workItem from="1686043881599" duration="25005000" />
+      <workItem from="1686211702496" duration="756000" />
+      <workItem from="1686236083167" duration="1384000" />
+      <workItem from="1686243274367" duration="18819000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1686060482024</created>

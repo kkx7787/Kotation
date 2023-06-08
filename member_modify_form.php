@@ -54,9 +54,12 @@ mysqli_close($con);
                     <div class="clear"></div>
                     <div class="form-group mb-md-0">
                         <!-- Password number input-->
-                        <input class="form-control" id="pass_confirm" type="password" placeholder="Your Password_Confirm *"
+                        <input class="form-control" id="pass_confirm" type="password"
+                               placeholder="Your Password_Confirm *"
                                data-sb-validations="required" name="pass_confirm" value="<?= $pass ?>"/>
-                        <div class="invalid-feedback" data-sb-feedback="pass_confirm:required">Password_Confirm is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="pass_confirm:required">Password_Confirm is
+                            required.
+                        </div>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -79,14 +82,19 @@ mysqli_close($con);
                 </div>
             </div>
             <div class="text-center gap-5">
-                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" onclick="check_input()">
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit"
+                        onclick="check_input()">
                     SUBMIT
-                </button>
-                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit" onclick="reset_form()">
-                    CLEAR
                 </button>
             </div>
         </form>
+        <div class="text-center gap-5">
+            <br/>
+            <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit"
+                    onclick="reset_form()">
+                CLEAR
+            </button>
+        </div>
     </div>
 </section>
 <footer>

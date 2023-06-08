@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
-<link rel="stylesheet" type="text/css" href="./css/common.css">
-<link rel="stylesheet" type="text/css" href="./css/board.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Kotation</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" type="text/css" href="./css/board.css">
+    <link href="css/styles.css" rel="stylesheet"/>
 </head>
-<body> 
-<header>
-    <?php include "header.php";?>
-</header>  
+<body id="page-top">
+<header class="masthead">
+    <?php include "header.php"; ?>
+</header>
 <section>
-	<div id="main_img_bar">
-        <img src="./img/main_img.png">
-    </div>
    	<div id="board_box">
 	    <h3>
 	    	게시판 > 목록보기
@@ -23,7 +31,6 @@
 					<span class="col1">번호</span>
 					<span class="col2">제목</span>
 					<span class="col3">글쓴이</span>
-					<span class="col4">첨부</span>
 					<span class="col5">등록일</span>
 					<span class="col6">조회</span>
 				</li>
@@ -63,16 +70,11 @@
 	  $subject     = $row["subject"];
       $regist_day  = $row["regist_day"];
       $hit         = $row["hit"];
-      if ($row["file_name"])
-      	$file_image = "<img src='./img/file.gif'>";
-      else
-      	$file_image = " ";
 ?>
 				<li>
 					<span class="col1"><?=$number?></span>
 					<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
 					<span class="col3"><?=$name?></span>
-					<span class="col4"><?=$file_image?></span>
 					<span class="col5"><?=$regist_day?></span>
 					<span class="col6"><?=$hit?></span>
 				</li>	
@@ -115,7 +117,6 @@
 ?>
 			</ul> <!-- page -->	    	
 			<ul class="buttons">
-				<li><button onclick="location.href='board_list.php'">목록</button></li>
 				<li>
 <?php 
     if($userid) {
@@ -135,5 +136,14 @@
 <footer>
     <?php include "footer.php";?>
 </footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>

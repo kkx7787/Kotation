@@ -1,0 +1,3 @@
+#board_box .buttons { text-align: center; margin: 20px 0 40px 0; }
+#board_box .buttons li { display: inline; }
+#board_box .buttons button { padding: 5px 10px; cursor: pointer; }

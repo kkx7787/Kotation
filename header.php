@@ -19,7 +19,7 @@ else $username = "";
                 } else {
                     $logged = $username . "(" . $userid . ")님";
                     ?>
-                    <li class="nav-item"><a class="nav-link" href="board.php">Board</a></li>
+                    <li class="nav-item"><a class="nav-link" href="board_list.php">Board</a></li>
                     <li class="nav-item"><a class="nav-link" href="message_form.php">Message</a></li>
                     <li class="nav-item"><a class="nav-link" href="signout.php">SignOut</a></li>
                     <li class="nav-item"><a class="nav-link" href="member_modify_form.php">Info</a></li>
@@ -33,5 +33,5 @@ else $username = "";
 <div class="container">
     <div class="masthead-subheading">Share your concerns with others</div>
     <div class="masthead-heading text-uppercase">Yes or No</div>
-    <a class="btn btn-primary btn-xl text-uppercase" href="board.php">Reveal Your Opinion</a>
+    <a class="btn btn-primary btn-xl text-uppercase" href="board_list.php">Reveal Your Opinion</a>
 </div>
